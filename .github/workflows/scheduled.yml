@@ -607,7 +607,7 @@ jobs:
 
       - name: "Run Aggregate Fuzzer"
         run: |
-          cd  velox
+          ls .
           cp ./scripts/etc/hive.properties $PRESTO_HOME/etc/catalog
           ls -lR $PRESTO_HOME/etc
           $PRESTO_HOME/bin/launcher run -v > /tmp/server.log 2>&1 &
